@@ -1,11 +1,11 @@
 <template>
   <div name="Datatable">
-    <div v-if="$slots.default || HeaderSettings" class="clearfix" style="margin-bottom: 10px">
+    <!-- <div v-if="$slots.default || HeaderSettings" class="clearfix" style="margin-bottom: 10px">
       <header-settings v-if="HeaderSettings" class="pull-right"
         :columns="columns" :support-backup="supportBackup">
       </header-settings>
       <slot />
-    </div>
+    </div> -->
 
     <tbl v-bind="$props" />
 
