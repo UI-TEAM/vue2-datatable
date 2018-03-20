@@ -34,7 +34,6 @@ export default {
 </script>
 <style>
 .-summary-row {
-  font-weight: bold;
-  background-color: #eee !important;
+    display: none;
 }
 </style>

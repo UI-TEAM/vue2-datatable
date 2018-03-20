@@ -38,3 +38,19 @@ export default {
   mixins: [props, shouldRenderSelection]
 }
 </script>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+thead{
+  color:#777982;
+  border: 1px solid #eee;
+}
+
+.table-bordered thead th, .table-bordered thead td {
+    border:0;
+    font-weight: normal;
+}
+.table th, .table td {
+    padding: 1rem;
+    word-wrap: break-word;
+}
+</style>

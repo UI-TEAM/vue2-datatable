@@ -2,9 +2,9 @@
   <label name="PageSizeSelect">
     <select class="form-control input-sm -page-size-select" v-model="query.limit"
       @change="query.offset = 0 /* reset to the first page */">
-      <option v-for="i in pageSizeOptions" :value="i">{{ i }}</option>
+      <option v-for="i in pageSizeOptions" :value="i">{{ i }}/page</option>
     </select>
-    {{ $i18nForDatatable('items / page') }}
+    <!-- {{ $i18nForDatatable('items / page') }} -->
   </label>
 </template>
 <script>
@@ -17,8 +17,17 @@ export default {
 }
 </script>
 <style>
+label{
+  margin-bottom: 0;
+}
 .-page-size-select {
-  display: inline-block;
-  width: 65px;
+    display: inline-block;
+    width: 80px;
+    padding: 5px 5px !important;
+    font-size: 12px;
+    margin-left: 10px;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + -2px);
 }
 </style>

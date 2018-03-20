@@ -1,22 +1,23 @@
 <template>
   <div name="Datatable">
-    <!-- <div v-if="$slots.default || HeaderSettings" class="clearfix" style="margin-bottom: 10px">
+    <div v-if="$slots.default || HeaderSettings" class="clearfix" style="margin-bottom: 10px">
       <header-settings v-if="HeaderSettings" class="pull-right"
         :columns="columns" :support-backup="supportBackup">
       </header-settings>
       <slot />
-    </div> -->
+    </div>
 
     <tbl v-bind="$props" />
 
-    <div v-if="Pagination" class="row" style="margin-top: 10px">
-      <div class="col-sm-6" style="white-space: nowrap">
+    <div v-if="Pagination" class="row tab-custom">
+      <!-- <div class="col-sm-6" style="white-space: nowrap">
         <strong>
           {{ $i18nForDatatable('Total') }} {{ total }} {{ $i18nForDatatable(',') }}
         </strong>
-        <page-size-select :query="query" :page-size-options="pageSizeOptions" />
-      </div>
-      <div class="col-sm-6">
+
+      </div> -->
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <page-size-select :query="query" :page-size-options="pageSizeOptions" class="float-right"/>
         <pagination class="pull-right" :total="total" :query="query" />
       </div>
     </div>
@@ -107,5 +108,11 @@ export default {
 }
 .fade-enter, .fade-leave-active {
   opacity: 0;
+}
+.tab-custom{
+  padding: 15px 0;
+    border: 1px solid #eee;
+    margin: 0;
+    border-top: 0;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <ul class="pagination" style="margin: 0" name="Pagination">
+  <ul class="pagination float-right" style="margin: 0" name="Pagination">
     <li v-if="!isFirstPage" class="page-item" @click="turnPage(-1)">
       <a href="#" class="page-link" @click.prevent>
-        <i class="fa fa-arrow-left"></i>
+          <font-awesome-icon :icon="['fal', 'chevron-double-left']" />
       </a>
     </li>
     <li v-for="i in dspBtns" :class="['page-item', { 'active': i === curPage }]">
@@ -10,12 +10,12 @@
         {{ i }}
       </a>
       <a v-else class="page-link">
-        <i class="fa fa-ellipsis-h"></i>
+      <font-awesome-icon :icon="['fal', 'ellipsis-h']" />
       </a>
     </li>
     <li v-if="!isLastPage" class="page-item" @click="turnPage(1)">
       <a href="#" class="page-link" @click.prevent>
-        <i class="fa fa-arrow-right"></i>
+      <font-awesome-icon :icon="['fal', 'chevron-double-right']" />
       </a>
     </li>
   </ul>

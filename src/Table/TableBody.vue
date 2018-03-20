@@ -60,3 +60,26 @@ export default {
   }
 }
 </script>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+tbody{
+  color:#777982;
+  border: 1px solid #eee;
+}
+tbody tr{
+  border-bottom: 1px solid #eee;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+background-color: #fff;
+}
+.table-striped tbody tr:nth-of-type(even):hover, .table-striped tbody tr:nth-of-type(odd):hover {
+background-color: #f5f5f5;
+}
+.table-bordered th, .table-bordered td {
+    border: 0;
+}
+.table th, .table td {
+    padding: 1rem;
+    word-wrap: break-word;
+}
+</style>
