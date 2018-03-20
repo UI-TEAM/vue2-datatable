@@ -8,7 +8,7 @@
     </div>
 
     <tbl v-bind="$props" />
-    
+
     <div v-if="Pagination" class="row" style="margin-top: 10px">
       <div class="col-sm-6" style="white-space: nowrap">
         <strong>
@@ -17,6 +17,7 @@
         <page-size-select :query="query" :page-size-options="pageSizeOptions" />
       </div>
       <div class="col-sm-6">
+        testing...
         <pagination class="pull-right" :total="total" :query="query" />
       </div>
     </div>
