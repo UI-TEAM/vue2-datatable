@@ -1,6 +1,9 @@
 <template>
   <a href="#" @click.prevent="handleClick" name="HeadSort">
-    <i :class="cls"></i>
+    <font-awesome-icon v-if="!this.order" :icon="['fal', 'sort']" />
+    <font-awesome-icon v-if="this.order==='asc'" :icon="['fal', 'sort-up']" />
+    <font-awesome-icon v-if="this.order==='desc'" :icon="['fal', 'sort-down']" />
+    <!-- <i :class="cls"></i> -->
   </a>
 </template>
 <script>
