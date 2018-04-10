@@ -1,5 +1,9 @@
 <template>
-  <input type="checkbox" v-model="status" @change="toggle" style="margin: 0; vertical-align: middle" name="MultiSelect">
+  <!-- <input type="checkbox" v-model="status" @change="toggle" style="margin: 0; vertical-align: middle" name="MultiSelect"> -->
+  <label class="inpt-container fs-12 f-clr m-0">
+    <input type="checkbox" v-model="status" @change="toggle" name="MultiSelect">
+    <span class="checkmark"></span>
+  </label>
 </template>
 <script>
 import replaceWith from '../_utils/replaceWith'

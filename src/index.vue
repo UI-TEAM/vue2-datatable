@@ -9,7 +9,7 @@
 
     <tbl v-bind="$props" />
 
-    <div v-if="Pagination" class="row tab-custom">
+    <div v-if="Pagination" class="row tab-custom m-0">
       <!-- <div class="col-sm-6" style="white-space: nowrap">
         <strong>
           {{ $i18nForDatatable('Total') }} {{ total }} {{ $i18nForDatatable(',') }}
@@ -110,7 +110,7 @@ export default {
   opacity: 0;
 }
 .tab-custom{
-  padding: 15px 0;
+  padding: 20px 0;
     border: 1px solid #eee;
     margin: 0;
     border-top: 0;

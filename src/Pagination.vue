@@ -67,3 +67,14 @@ export default {
   }
 }
 </script>
+<style scoped>
+.page-item.active .page-link {
+    z-index: 1;
+    color: #007bff !important;
+    background-color: transparent !important;
+    border-color: #007bff;
+}
+.page-link{
+  color: #777982 !important;
+}
+</style>
