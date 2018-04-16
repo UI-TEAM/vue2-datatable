@@ -1,8 +1,8 @@
 <template>
-  <a href="#" @click.prevent="handleClick" name="HeadSort">
-    <font-awesome-icon v-if="!this.order" :icon="['fal', 'sort']" />
-    <font-awesome-icon v-if="this.order==='asc'" :icon="['fal', 'sort-up']" />
-    <font-awesome-icon v-if="this.order==='desc'" :icon="['fal', 'sort-down']" />
+  <a href="#" @click.prevent="handleClick" name="HeadSort" class="f-clr">
+    <font-awesome-icon v-if="!this.order" :icon="['fal', 'sort']" class="f-clr"/>
+    <font-awesome-icon v-if="this.order==='asc'" :icon="['fal', 'sort-up']" class="f-clr"/>
+    <font-awesome-icon v-if="this.order==='desc'" :icon="['fal', 'sort-down']" class="f-clr"/>
     <!-- <i :class="cls"></i> -->
   </a>
 </template>
