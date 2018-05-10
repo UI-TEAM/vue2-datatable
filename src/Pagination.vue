@@ -75,6 +75,6 @@ export default {
     border-color: #007bff;
 }
 .page-link{
-  color: #777982 !important;
+  color: #616161 !important;
 }
 </style>

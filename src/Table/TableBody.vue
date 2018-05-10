@@ -63,7 +63,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 tbody{
-  color:#777982;
+  color:#616161 !important;
   border: 1px solid #eee;
 }
 tbody tr{
@@ -79,7 +79,7 @@ background-color: #f5f5f5;
     border: 0;
 }
 .table th, .table td {
-    padding: 1rem;
+    /*padding: 1rem;*/
     word-wrap: break-word;
 }
 </style>
