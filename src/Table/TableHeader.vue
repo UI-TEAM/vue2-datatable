@@ -44,7 +44,9 @@ thead{
   color:#616161 !important;
   border: 1px solid #eee;
 }
-
+.table-bordered thead th:first-child{
+min-width: 42px !important;
+}
 .table-bordered thead th, .table-bordered thead td {
     border:0;
     font-weight: normal;

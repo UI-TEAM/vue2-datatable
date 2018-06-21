@@ -16,7 +16,7 @@
         </strong>
 
       </div> -->
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
         <page-size-select :query="query" :page-size-options="pageSizeOptions" class="float-right"/>
         <pagination class="pull-right" :total="total" :query="query" />
       </div>
@@ -111,8 +111,9 @@ export default {
 }
 .tab-custom{
   padding: 20px 0;
-    border: 1px solid #eee;
+    /*border: 1px solid #eee;*/
     margin: 0;
     border-top: 0;
+    border: 0 !important;
 }
 </style>

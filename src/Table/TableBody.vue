@@ -69,6 +69,9 @@ tbody{
 tbody tr{
   border-bottom: 1px solid #eee;
 }
+tbody tr td:first-child{
+min-width: 42px !important;
+}
 .table-striped tbody tr:nth-of-type(odd) {
 background-color: #fff;
 }
