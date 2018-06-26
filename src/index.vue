@@ -116,4 +116,7 @@ export default {
     border-top: 0;
     border: 0 !important;
 }
+.table-bordered {
+    border:0 !important;
+}
 </style>

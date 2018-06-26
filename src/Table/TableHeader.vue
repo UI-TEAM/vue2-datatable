@@ -42,13 +42,16 @@ export default {
 <style scoped>
 thead{
   color:#616161 !important;
-  border: 1px solid #eee;
+  border-bottom: 1px solid #eee !important;
+}
+.table-bordered {
+    border:0 !important;
 }
 .table-bordered thead th:first-child{
 min-width: 42px !important;
 }
 .table-bordered thead th, .table-bordered thead td {
-    border:0;
+    border:0 !important;
     font-weight: normal;
 }
 .table th, .table td {

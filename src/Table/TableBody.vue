@@ -64,7 +64,7 @@ export default {
 <style scoped>
 tbody{
   color:#616161 !important;
-  border: 1px solid #eee;
+  border: 0 !important;
 }
 tbody tr{
   border-bottom: 1px solid #eee;
@@ -76,7 +76,8 @@ min-width: 42px !important;
 background-color: #fff;
 }
 .table-striped tbody tr:nth-of-type(even):hover, .table-striped tbody tr:nth-of-type(odd):hover {
-background-color: #f5f5f5;
+/*background-color: #f5f5f5;*/
+background-color: rgba(128, 128, 128, 0.04) !important;
 }
 .table-bordered th, .table-bordered td {
     border: 0;
